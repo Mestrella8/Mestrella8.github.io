@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidenav">
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.pdf">Resume</a>
+    </div>
 
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
+    <div class="main-content">
+        <header>
+            <h1>Welcome to My Website</h1>
+        </header>
 
-    
-    <a href="{{ url_for('my_account') }}" class="myAccount">
-      <button type="button" class="btn btn-outline-secondary">My Account</button>
-      <!-- <button type="button">
-          my account
-      </button> -->
-  </a>
-  <!-- <h1>StoreFront</h1>
-    
-    <h2>shopping made simple.</h2> -->
+        <section>
+            <h2>About Me</h2>
+            <p>Here you can include a brief introduction about yourself.</p>
+        </section>
 
-  
-  <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="{{ url_for('shop') }}" class="link">About Me</a>
-      <a href="{{ url_for('vintage') }}" class="link">Projects</a>
-      <a href="{{ url_for('nightout') }}" class="link">Resume</a>
-  </div>
-  
-  <!-- Use any element to open the sidenav -->
-  <span onclick="openNav()" style="right: 700px; position: relative; top: -300px;">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-  </span>
+        <section>
+            <h2>Projects</h2>
+            <p>Highlight some of your key projects here.</p>
+        </section>
 
-    </main>
-	<script src="index.js"></script>
-  </body>
+        <section>
+            <h2>Resume</h2>
+            <p><a href="resume.pdf" target="_blank">View my resume</a></p>
+        </section>
+
+        <!-- Your Custom Side Navigation Menu (if needed) -->
+        <div id="mySidenav" class="sidenav" style="display:none;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="about.html" class="link">About Me</a>
+            <a href="projects.html" class="link">Projects</a>
+            <a href="resume.pdf" class="link">Resume</a>
+        </div>
+
+        <!-- Open Side Navigation Button -->
+        <span onclick="openNav()" style="cursor:pointer; position:fixed; right:20px; top:20px;">
+            <div class="bar1" style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+            <div class="bar2" style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+            <div class="bar3" style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+        </span>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Personal Website</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
 </html>
-
