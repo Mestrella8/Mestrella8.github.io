@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 <body>
+        <!-- Side Navigation -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+        </div>
 
-    <section>
-        <h2>Resume</h2>
-        <p><a href="resume.pdf" target="_blank">View my resume</a></p>
-    </section>
+            <!-- Open Side Navigation Button -->
+        <span onclick="openNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
+            <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+            <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+            <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+        </span>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Resume</h1>
+            </header>
+            
+            <section>
+                <p><a href="Current_Resume.pdf" target="_blank">View my resume</a></p>
+            </section>
+        </div>
 
 </body>
 </html>
