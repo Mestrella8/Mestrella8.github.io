@@ -1,7 +1,7 @@
 function openNav() {
-    document.getElementById("mySidenav").style.right = "0";
+    document.getElementById("mySidenav").style.left = "0";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.right = "-250px";
+    document.getElementById("mySidenav").style.left = "-250px";
 }
