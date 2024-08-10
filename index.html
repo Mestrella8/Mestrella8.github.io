@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidenav">
+    <!-- Side Navigation -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="about.html">About Me</a>
         <a href="projects.html">Projects</a>
         <a href="resume.html">Resume</a>
     </div>
 
+    <!-- Main Content -->
     <div class="main-content">
         <header>
             <h1>Welcome to My Website</h1>
         </header>
         
         <section>
-          <h2>About Me</h2>
-          <p>Here you can include a brief introduction about yourself.</p>
-      </section>
+            <h2>About Me</h2>
+            <p>Here you can include a brief introduction about yourself.</p>
+        </section>
 
         <section>
             <h2>Projects</h2>
@@ -32,22 +35,14 @@
             <h2>Resume</h2>
             <p><a href="resume.pdf" target="_blank">View my resume</a></p>
         </section>
-
-        <!-- Your Custom Side Navigation Menu (if needed) -->
-        <div id="mySidenav" class="sidenav" style="display:none;">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="about.html" class="link">About Me</a>
-            <a href="projects.html" class="link">Projects</a>
-            <a href="resume.html" class="link">Resume</a>
-        </div>
-
-        <!-- Open Side Navigation Button -->
-        <span onclick="openNav()" style="cursor:pointer; position:fixed; right:20px; top:20px;">
-            <div class="bar1" style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-            <div class="bar2" style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-            <div class="bar3" style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-        </span>
     </div>
+
+    <!-- Open Side Navigation Button -->
+    <span onclick="openNav()" style="cursor:pointer; position:fixed; right:20px; top:20px;">
+        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+    </span>
 
     <footer>
         <p>&copy; 2024 My Personal Website</p>
@@ -56,3 +51,4 @@
     <script src="index.js"></script>
 </body>
 </html>
+
