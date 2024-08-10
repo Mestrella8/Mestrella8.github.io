@@ -1,6 +1,4 @@
-function openNav() {
-    document.getElementById("mySidenav").style.left = "0";
-}
+
 
 function toggleNav() {
     const sidenav = document.getElementById("mySidenav");

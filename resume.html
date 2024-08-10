@@ -9,7 +9,6 @@
 <body>
         <!-- Side Navigation -->
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Home</a>
             <a href="about.html">About Me</a>
             <a href="projects.html">Projects</a>
@@ -17,7 +16,7 @@
         </div>
 
             <!-- Open Side Navigation Button -->
-        <span onclick="openNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
+        <span onclick="toggleNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
             <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
             <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
             <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
@@ -33,6 +32,8 @@
                 <p><a href="Current_Resume.pdf" target="_blank">View my resume</a></p>
             </section>
         </div>
+
+        <script src="index.js"></script>
 
 </body>
 </html>
