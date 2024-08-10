@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
 
-    <section>
-        <h1>About Me</h1>
-        <p>Here you can include a brief introduction about yourself.</p>
-    </section>
+        <!-- Side Navigation -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+        </div>
 
-</body>
+            <!-- Open Side Navigation Button -->
+        <span onclick="openNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
+            <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+            <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+            <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+        </span>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>About Me</h1>
+            </header>
+            
+            <section>
+                <p>Here you can include a brief introduction about yourself.</p>
+            </section>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
 </html>
