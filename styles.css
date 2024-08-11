@@ -80,3 +80,46 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+    color: #818181;
+    padding: 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #111;
+    min-width: 250px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #818181;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
