@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Side Navigation -->
-    <div id="mySidenav" class="sidenav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-    </div>
+        <!-- Side Navigation -->
+        <div id="mySidenav" class="sidenav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+      </div>
+
+          <!-- Open Side Navigation Button -->
+      <span onclick="toggleNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
+          <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+          <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+          <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+      </span>
 
     <!-- Main Content -->
     <div class="main-content">
@@ -22,27 +29,10 @@
         </header>
         
         <section>
-            <h2>About Me</h2>
-            <p>Here you can include a brief introduction about yourself.</p>
+            <p>Get to know me </p>
         </section>
 
-        <section>
-            <h2>Projects</h2>
-            <p>Highlight some of your key projects here.</p>
-        </section>
-
-        <section>
-            <h2>Resume</h2>
-            <p><a href="resume.pdf" target="_blank">View my resume</a></p>
-        </section>
     </div>
-
-    <!-- Open Side Navigation Button -->
-    <span onclick="toggleNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
-        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-    </span>
 
     <footer>
         <p>&copy; 2024 My Personal Website</p>
