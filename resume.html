@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Personal Website</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-      <!-- Open Side Navigation Button -->
-      <div id="mySidenav" class="sidenav">
+    <!-- Open Side Navigation Button -->
+    <div id="mySidenav" class="sidenav">
         <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
         <a href="projects.html">Projects</a>
         <a href="resume.html">Resume</a>
         <div class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Hobbies</a>
             <div class="dropdown-content">
-                <a href="ceramics.html">Ceramics</a>
                 <a href="photography.html">Photography</a>
-                <a href="crafts.html">Crafts & Sewing</a>
+                <a href="crafts.html">Arts & Crafts</a>
             </div>
         </div>
     </div>
-      <!-- Open Side Navigation Button -->
-      <span onclick="toggleNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
+    
+    <!-- Open Side Navigation Button -->
+    <span onclick="toggleNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
         <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
         <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
         <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
     </span>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <header>
-                <h1>Resume</h1>
-            </header>
-            
-            <section>
-                <p><a href="images/Current_Resume.pdf" target="_blank">View my resume</a></p>
-            </section>
-        </div>
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Resume</h1>
+        </header>
+        
+        <section class="resume-section">
+            <img src="images/Current_Resume.pdf" alt="Resume Image" class="resume-image"/>
+        </section>
+    </div>
 
-        <script src="index.js"></script>
-
+    <script src="index.js"></script>
 </body>
 </html>

@@ -9,12 +9,12 @@ body {
 header {
     text-align: center;
     padding: 10px 0;
-    margin: 20;
 }
 
-h1, h2 {
+h1,  h2 {
     margin: 0;
     padding: 10px;
+    text-align: center;
 }
 
 /* Side Navigation */
@@ -103,6 +103,7 @@ footer {
     background-color: #111;
     min-width: 250px;
     z-index: 1;
+    text-indent: 10%;
 }
 
 /* Links inside the dropdown */
@@ -123,3 +124,150 @@ footer {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Masonry Styles */
+.gallery {
+    column-count: 3; /* Number of columns */
+    column-gap: 15px; /* Gap between columns */
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Space between images */
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .gallery {
+        column-count: 2; /* Two columns for medium screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery {
+        column-count: 1; /* One column for small screens */
+    }
+}
+
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 40%;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Resume Image */
+.resume-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Takes up 80% of the viewport height */
+}
+
+.resume-image {
+    max-width: 80%; /* Adjusts the image size */
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column; /* Stack projects vertically */
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 100px;
+    display: flex;
+}
+
+.project img {
+    max-width: 40%; /* Ensures the image is responsive */ 
+    height: auto; /* Adjust this value as needed */
+    margin-bottom: 15px; /* Adds space below the image */
+    flex: 1;
+    margin-right: 20px; 
+    border-radius: 8px;
+}
+
+
+.project h3 {
+    margin-top: 0; /* Remove the top margin */
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.project p {
+    flex: 2;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.photos {
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Ensure image is above the text */
+    align-items: center; /* Center the content horizontally */
+}
+
+.craft {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    margin-bottom: 20px; /* Space between different crafts */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between the images */
+    margin-top: 20px; /* Space above the images */
+}
+
+.craft img {
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+

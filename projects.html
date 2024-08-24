@@ -1,46 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Personal Website</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-
-      <!-- Open Side Navigation Button -->
-      <div id="mySidenav" class="sidenav">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Side Navigation -->
+    <div id="mySidenav" class="sidenav">
         <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
         <a href="projects.html">Projects</a>
         <a href="resume.html">Resume</a>
         <div class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Hobbies</a>
             <div class="dropdown-content">
-                <a href="ceramics.html">Ceramics</a>
                 <a href="photography.html">Photography</a>
-                <a href="crafts.html">Crafts & Sewing</a>
+                <a href="crafts.html">Arts & Crafts</a>
             </div>
         </div>
     </div>
-      <!-- Open Side Navigation Button -->
-      <span onclick="toggleNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
+
+    <!-- Open Side Navigation Button -->
+    <span onclick="toggleNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
         <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
         <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
         <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
     </span>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <header>
-                <h1>Projects</h1>
-            </header>
-            
-            <section>
-                <p>List of Projects</p>
-            </section>
-        </div>
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Projects</h1>
+        </header>
+        
+        <section class="projects-section">
+            <div class="project">
+                <img src="images/Screenshot 2024-08-19 at 5.39.19 PM.png" alt="Project 1">
+                <div class="project-text">
+                    <h3>Data Structures</h3>
+                    <p>In this course, I built upon my foundational programming skills by focusing on program design, analysis, and verification, alongside an introduction to essential data structures. Data structures are critical for efficiently storing and manipulating data in complex computer programs, ensuring optimal memory usage and runtime while maintaining scalability for large datasets.</p>
+                    <p>I gained hands-on experience with some of the most important data structures, including lists, stacks, queues, trees, and hash tables. I also developed the ability to analyze their efficiency using a mathematical approach. The course emphasized writing clear, modular code that is easy to read, debug, and modify. I've had the chance to work as a Learning asisstant my Sophomore year and am glad to return for my senior year!</p>
+                    <p><strong>Key outcomes from this course include:</strong></p>
+                    <ul>
+                        <li>Understanding the design, implementation, and trade-offs of fundamental data structures.</li>
+                        <li>Developing the ability to reason about program efficiency within a consistent, mathematical framework.</li>
+                        <li>Gaining practical experience in designing and implementing complex, modular programs.</li>
+                    </ul>
+                </div>
+            </div>
 
-        <script src="index.js"></script>
-    </body>
+            <div class="project">
+                <img src="images/Screenshot 2024-08-19 at 5.35.31 PM.png" alt="Project 2">
+                <div class="project-text">
+                    <h3>IBM Data Analyst</h3>
+                    <p>I earned the IBM Professional Certificate in Data Analytics by completing an intensive 9-course program focused on core data analysis principles and practical applications. Throughout the program, I gained hands-on experience with diverse data sources and real-world project scenarios, working extensively with tools such as Excel, SQL, Relational Databases, Python, Jupyter Notebooks, and Cognos Analytics.</p>
+                    <p>I developed strong skills in data manipulation, analysis, and visualization, enabling me to create visualizations, interactive dashboards, and comprehensive reports. This certification has equipped me with the analytical techniques and practical experience necessary for an entry-level role in data analytics.
+                        <a href="https://coursera.org/share/69a3a885ea5905eaf11e42df8bad5cb0" target="_blank"> Follow this to verify certification.</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/Screenshot 2024-08-19 at 5.41.24 PM.png" alt="Project 3">
+                <div class="project-text">
+                    <h3>SEO Tech Developer</h3>
+                    <ul>
+                        <li><strong>Developed an Online Shop Simulation:</strong> Utilized HTML, CSS, and JavaScript for the front end, and Python with Flask for the back end, completing the project in 3 weeks.</li>
+                        <li><strong>Backend Development:</strong> Focused primarily on backend functionality, including setting up a user authentication system and creating a database to manage logged-in users.</li>
+                        <li><strong>Project Repository:</strong> <a href="https://github.com/desolaafujah/StoreFront.git" target="_blank">GitHub Link</a>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/IMG_9441.jpg" alt="Project 4">
+                <div class="project-text">
+                    <h3>App Development</h3>
+                    <p>In this class, I learned how to build cross-platform mobile applications for both Android and iOS. The course focused heavily on front-end development and creating intuitive, user-friendly interfaces.</p>
+                    
+                    <h4>Key Learnings:</h4>
+                    
+                    <h4>Cross-Platform Mobile Development</h4>
+                    <p>I learned the entire process of developing mobile apps, from initial idea to final publication.</p>
+                    
+                    <h4>Human-Centered Design</h4>
+                    <p>This approach emphasized involving users from the start of the design process and keeping their needs central throughout development. It was about creating not just functional apps but ones that truly understood and met user expectations.</p>
+                    
+                    <h4>Development Tools</h4>
+                    <ul>
+                        <li><strong>JavaScript on Node.js:</strong> I explored how Node.js extends JavaScript’s capabilities beyond browser scripting, making it a versatile language for various applications.</li>
+                        <li><strong>React & React Native:</strong> I used React to build user interfaces and React Native to develop cross-platform apps. React’s component-based architecture helped manage state and render UIs effectively, while React Native allowed me to translate JavaScript into native commands on mobile devices.</li>
+                        <li><strong>Expo:</strong> This tool made development smoother by providing pre-configured templates and a library of ready-to-use components. It also simplified testing and deployment with its development server and Expo Go app.</li>
+                        <li><strong>Firebase:</strong> I used Firebase to handle backend configuration and content management. It was great for quickly building MVPs and keeping costs low during the prototyping phase.</li>
+                    </ul>
+                    
+                    <p>Overall, the course provided a solid foundation in mobile app development and introduced me to essential tools and practices in the field.</p>
+
+                    <p><strong>Project Repository:</strong> <a href="https://github.com/Mestrella8/tic-tac-toe-app.git" target="_blank">GitHub Link</a>.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
 </html>
+
