@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-        <!-- Open Side Navigation Button -->
-        <div id="mySidenav" class="sidenav">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="resume.html">Resume</a>
-            <div class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Hobbies</a>
-                <div class="dropdown-content">
-                    <a href="photography.html">Photography</a>
-                    <a href="crafts.html">Arts & Crafts</a>
-                </div>
+    <!-- Open Side Navigation Button -->
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Hobbies</a>
+            <div class="dropdown-content">
+                <a href="photography.html">Photography</a>
+                <a href="crafts.html">Arts & Crafts</a>
             </div>
         </div>
-          <!-- Open Side Navigation Button -->
-          <span onclick="toggleNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
-            <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-            <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-            <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-        </span>
+    </div>
+    <!-- Open Side Navigation Button -->
+    <span onclick="toggleNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
+        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
+    </span>
 
     <!-- Main Content -->
     <div class="main-content">
         <header>
             <h1>Photography</h1>
+
+            <div class="nav-container">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+
+                        <!-- Vertical dropdown section -->
+                        <li>
+                            <div class="vertical-dropdown">
+                                <a href="javascript:void(0)">Hobbies</a>
+                                <div class="dropdown-content">
+                                    <a href="photography.html">Photography</a>
+                                    <a href="crafts.html">Arts & Crafts</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <div class="photos">
 
@@ -38,20 +61,26 @@
 
             <section>
                 <p>
-                    During my semester in Mayagüez, Puerto Rico, I had the incredible opportunity to immerse myself in the island's rich culture and stunning landscapes. From the vibrant streets of Old San Juan & serene beauty of El Yunque Rainforest to the calm water in Cabo Rojo, each photo captures a unique facet of Puerto Rico’s charm.
+                    During my semester in Mayagüez, Puerto Rico, I had the incredible opportunity to immerse myself in
+                    the island's rich culture and stunning landscapes. From the vibrant streets of Old San Juan & serene
+                    beauty of El Yunque Rainforest to the calm water in Cabo Rojo, each photo captures a unique facet of
+                    Puerto Rico’s charm.
                 </p>
                 <p>
-                    I’m thrilled to share that one of these photos was awarded 1st place in the Middlebury Schools Abroad Photo Contest! The contest was open to students studying abroad, and receiving this recognition was an honor that truly highlights the unforgettable experiences I had in Puerto Rico.
+                    I’m thrilled to share that one of these photos was awarded 1st place in the Middlebury Schools
+                    Abroad Photo Contest! The contest was open to students studying abroad, and receiving this
+                    recognition was an honor that truly highlights the unforgettable experiences I had in Puerto Rico.
                 </p>
             </section>
-            
 
-            <section >
+
+            <section>
                 <div class="gallery">
                     <a href="#" class="image fit"><img src="images/Puerto Rico/IMG_6975 2.jpeg" alt="Photo 1"></a>
                     <a href="#" class="image fit"><img src="images/Puerto Rico/21.jpg" alt="Photo 2"></a>
                     <a href="#" class="image fit"><img src="images/Puerto Rico/30.jpg" alt="Photo 3"></a>
-                    <a href="#" class="image fit"><img src="images/Puerto Rico/09946c2b-68ca-4b43-b692-95b0901cf5aa 2.JPG" alt="Photo 4"></a>
+                    <a href="#" class="image fit"><img
+                            src="images/Puerto Rico/09946c2b-68ca-4b43-b692-95b0901cf5aa 2.JPG" alt="Photo 4"></a>
                     <a href="#" class="image fit"><img src="images/Puerto Rico/IMG_6282.JPG" alt="Photo 5"></a>
                     <a href="#" class="image fit"><img src="images/Puerto Rico/IMG_6288.JPG" alt="Photo 6"></a>
                     <a href="#" class="image fit"><img src="images/Puerto Rico/IMG_6402.JPG" alt="Photo 7"></a>
@@ -59,7 +88,8 @@
                     <a href="#" class="image fit"><img src="images/Puerto Rico/IMG_6444.JPG" alt="Photo 9"></a>
                     <a href="#" class="image fit"><img src="images/Puerto Rico/9.jpg" alt="Photo 10"></a>
                     <a href="#" class="image fit"><img src="images/Puerto Rico/IMG_6459.JPG" alt="Photo 11"></a>
-                    <a href="#" class="image fit"><img src="images/Puerto Rico/eff50bbf-b6f1-43b9-bb45-7e7a10317357.JPG" alt="Photo 12"></a>
+                    <a href="#" class="image fit"><img src="images/Puerto Rico/eff50bbf-b6f1-43b9-bb45-7e7a10317357.JPG"
+                            alt="Photo 12"></a>
                     <a href="#" class="image fit"><img src="images/Puerto Rico/IMG_6441.JPG" alt="Photo 13"></a>
                     <a href="#" class="image fit"><img src="images/Puerto Rico/IMG_6212 2.jpeg" alt="Photo 14"></a>
                     <a href="#" class="image fit"><img src="images/Puerto Rico/IMG_6406.JPG" alt="Photo 15"></a>
@@ -75,37 +105,47 @@
 
             <section>
                 <p>
-                    While studying abroad in Sweden, I took a class called Photo Documentary and Discovery, where I learned the basics of lighting, including aperture, ISO, and focus. The course involved workshops and excursions that helped me develop my skills in composition, lighting, and storytelling.
+                    While studying abroad in Sweden, I took a class called Photo Documentary and Discovery, where I
+                    learned the basics of lighting, including aperture, ISO, and focus. The course involved workshops
+                    and excursions that helped me develop my skills in composition, lighting, and storytelling.
                 </p>
                 <p>
-                    Regular studio critiques were a key part of the experience, providing valuable insights into my work and that of my peers. These critiques challenged me to articulate the meaning behind my photographs and refine my personal style. The course encouraged me to see the world through a more sensitive and deliberate lens, deepening my understanding of both photography and the cultures I was immersed in.
+                    Regular studio critiques were a key part of the experience, providing valuable insights into my work
+                    and that of my peers. These critiques challenged me to articulate the meaning behind my photographs
+                    and refine my personal style. The course encouraged me to see the world through a more sensitive and
+                    deliberate lens, deepening my understanding of both photography and the cultures I was immersed in.
                 </p>
-                
-            </section>
-            
 
-            <section >
+            </section>
+
+
+            <section>
                 <div class="gallery">
-                    <a href="#" class="image fit"><img src="images/Sweden/034D4A78-BCAB-4ABD-A27F-B838884EED24_1_105_c.jpeg" alt="Photo 1"></a>
-                    <a href="#" class="image fit"><img src="images/Sweden/1152FB96-6012-4C56-984E-1A02DBF22FF8_1_105_c.jpeg" alt="Photo 1"></a>
-                    <a href="#" class="image fit"><img src="images/Sweden/273CB9C4-C99D-4FED-8E67-61200C466BA0_1_105_c.jpeg" alt="Photo 1"></a>
-                    <a href="#" class="image fit"><img src="images/Sweden/2E8AC3DE-15AF-40E7-BB5D-8BE10C74612E_1_105_c.jpeg" alt="Photo 1"></a>
-                    <a href="#" class="image fit"><img src="images/Sweden/81A14524-2EEE-418A-A659-35D127495555_1_105_c.jpeg" alt="Photo 1"></a>
-                    <a href="#" class="image fit"><img src="images/Sweden/C8069902-FC40-4657-8629-C0E2917D7C59_1_105_c.jpeg" alt="Photo 1"></a>
-                    <a href="#" class="image fit"><img src="images/Sweden/D2CBC128-500A-4FB4-B2D2-7F4641BCBF2B_1_105_c.jpeg" alt="Photo 1"></a>
-                    <a href="#" class="image fit"><img src="images/Sweden/D87E0024-297D-400B-9F78-A63750BB6B86_1_105_c.jpeg" alt="Photo 1"></a>
-                    <a href="#" class="image fit"><img src="images/Sweden/DD1D4337-1CDB-4C3F-9119-8715ACE894A8_1_105_c.jpeg" alt="Photo 1"></a>
-                    <a href="#" class="image fit"><img src="images/Sweden/FDD555BC-E233-44B7-A1E0-B0FC837F21C4_1_105_c.jpeg" alt="Photo 1"></a>
+                    <a href="#" class="image fit"><img
+                            src="images/Sweden/034D4A78-BCAB-4ABD-A27F-B838884EED24_1_105_c.jpeg" alt="Photo 1"></a>
+                    <a href="#" class="image fit"><img
+                            src="images/Sweden/1152FB96-6012-4C56-984E-1A02DBF22FF8_1_105_c.jpeg" alt="Photo 1"></a>
+                    <a href="#" class="image fit"><img
+                            src="images/Sweden/273CB9C4-C99D-4FED-8E67-61200C466BA0_1_105_c.jpeg" alt="Photo 1"></a>
+                    <a href="#" class="image fit"><img
+                            src="images/Sweden/2E8AC3DE-15AF-40E7-BB5D-8BE10C74612E_1_105_c.jpeg" alt="Photo 1"></a>
+                    <a href="#" class="image fit"><img
+                            src="images/Sweden/81A14524-2EEE-418A-A659-35D127495555_1_105_c.jpeg" alt="Photo 1"></a>
+                    <a href="#" class="image fit"><img
+                            src="images/Sweden/C8069902-FC40-4657-8629-C0E2917D7C59_1_105_c.jpeg" alt="Photo 1"></a>
+                    <a href="#" class="image fit"><img
+                            src="images/Sweden/D2CBC128-500A-4FB4-B2D2-7F4641BCBF2B_1_105_c.jpeg" alt="Photo 1"></a>
+                    <a href="#" class="image fit"><img
+                            src="images/Sweden/D87E0024-297D-400B-9F78-A63750BB6B86_1_105_c.jpeg" alt="Photo 1"></a>
+                    <a href="#" class="image fit"><img
+                            src="images/Sweden/DD1D4337-1CDB-4C3F-9119-8715ACE894A8_1_105_c.jpeg" alt="Photo 1"></a>
+                    <a href="#" class="image fit"><img
+                            src="images/Sweden/FDD555BC-E233-44B7-A1E0-B0FC837F21C4_1_105_c.jpeg" alt="Photo 1"></a>
                 </div>
             </section>
         </div>
     </div>
-
-    <footer>
-        <p>&copy; 2024 My Personal Website</p>
-    </footer>
-
     <script src="index.js"></script>
 </body>
-</html>
 
+</html>
