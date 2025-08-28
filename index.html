@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+    <!-- Side Navigation When Hamburger Button is Clicked -->
     <div id="mySidenav" class="sidenav">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
@@ -22,12 +22,13 @@
             </div>
         </div>
     </div>
-    <!-- Side Navigation Button -->
-    <span onclick="toggleNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
-        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-    </span>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" onclick="toggleNav()">
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+    </div>
 
     <!-- Main Content -->
     <div class="main-content">

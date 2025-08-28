@@ -1,4 +1,3 @@
-
 :root {
     --primary-color: #111;
     --text-color: #333;
@@ -36,6 +35,7 @@ header {
     /* Makes list items flow horizontally */
     margin-right: 15px;
     /* Adds space between entries */
+    color: #000;
 }
 
 h1,
@@ -52,7 +52,6 @@ h2 {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 1100;
     background: var(--white);
     padding: 8px;
     border-radius: 4px;
@@ -76,7 +75,6 @@ h2 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
 }
 
 .overlay.active {
@@ -152,23 +150,65 @@ h2 {
     margin-left: 10px;
 }
 
+/* Hamburger Menu Button */
+.hamburger-menu {
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    z-index: 101;
+}
+
+.hamburger-menu:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+}
+
+.hamburger-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* When navigation is open */
+.sidenav.open {
+    width: 250px;
+}
+
+.dropdown {
+    position: relative;
+}
+
 .dropdown-content {
     display: none;
-    padding: 0;
-    width: 100%;
+    position: static;
+    background-color: transparent;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
 }
 
 .dropdown-content a {
-    padding: 15px 25px;
-    text-decoration: none;
-    display: block;
-    transition: background 0.3s ease;
-    border-left: 4px solid transparent;
+    font-size: 16px;
+    color: black;
 }
 
 .dropdown-content a:hover {
-    background: lightgrey;
-    border-left: 4px solid black;
+    background-color: lightgrey;
+    color: black;
+    border-left-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .vertical-dropdown:hover .dropdown-content {
@@ -183,38 +223,46 @@ h2 {
     width: 100%;
 }
 
-/* Side Navigation */
 .sidenav {
     height: 100%;
-    width: 250px;
+    width: 0;
     position: fixed;
+    z-index: 100;
     top: 0;
-    left: -250px; /* Hidden by default */
-    background-color: light;
+    left: 0;
+    background-color:white;
     overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+    transition: 0.3s;
+    padding-top: 100px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 15px 25px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 18px;
+    color: black;
     display: block;
-    transition: 0.3s;
+    transition: 0.2s;
+    border-left: 4px solid transparent;
+    font-weight: 500;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    background-color: lightgrey;
+    color: black;
+    border-left-color: black;
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+/* When navigation is open */
+.sidenav.open {
+    width: 250px;
+}
+
+/* Page content - push when nav opens */
+#main {
+    transition: margin-left 0.3s;
+    padding: 20px;
 }
 
 /* Menu Button for Opening Side Navigation */
@@ -223,7 +271,7 @@ h2 {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 1000; /* Ensure it stays on top */
+    /* Ensure it stays on top */
 }
 
 .content h2 {
@@ -274,8 +322,8 @@ h2 {
     border-radius: 12px;
     max-width: 400px;
     object-fit: cover;
-    max-height:400px;
-    flex:1;
+    max-height: 400px;
+    flex: 1;
 }
 
 .about-text {
@@ -425,6 +473,16 @@ h2 {
 
     .craft img {
         margin-left: 0;
+    }
+
+    .sidenav.open {
+        width: 200px;
+    }
+
+    .hamburger-menu {
+        left: 15px;
+        top: 15px;
+        padding: 8px;
     }
 }
 

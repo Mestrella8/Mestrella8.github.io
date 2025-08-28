@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <!-- Side Navigation -->
+    <!-- Side Navigation When Hamburger Button is Clicked -->
     <div id="mySidenav" class="sidenav">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
@@ -23,12 +23,12 @@
         </div>
     </div>
 
-    <!-- Open Side Navigation Button -->
-    <span onclick="toggleNav()" style="cursor:pointer; position:fixed; left:20px; top:20px;">
-        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-        <div style="width:30px; height:3px; background-color:#333; margin:6px 0;"></div>
-    </span>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" onclick="toggleNav()">
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+    </div>
 
     <!-- Main Content -->
     <div class="main-content">
@@ -127,7 +127,7 @@
                     <p>In this class, I learned how to build cross-platform mobile applications for both Android and
                         iOS. The course focused heavily on front-end development and creating intuitive, user-friendly
                         interfaces.</p>
-                        
+
                     <p>Human-Centered Design emphasized involving users from the start of the design process and keeping their
                         needs central throughout development. It was about creating not just functional apps but ones
                         that truly understood and met user expectations.</p>
