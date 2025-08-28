@@ -1,4 +1,4 @@
-/* General Styles */
+
 :root {
     --primary-color: #111;
     --text-color: #333;
@@ -23,7 +23,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 header {
     text-align: center;
     padding: 15px 0;
@@ -44,6 +43,7 @@ h2 {
     margin: 0;
     padding: 10px;
     text-align: center;
+    text-decoration: underline;
 }
 
 /* Menu Button */
@@ -92,7 +92,6 @@ h2 {
 
 
 .dropbtn {
-    color: var(--light-text);
     padding: 12px 32px;
     text-decoration: none;
     font-size: 1.2rem;
@@ -272,9 +271,11 @@ h2 {
 }
 
 .about-image {
-    flex: 1;
-    max-width: 300px;
     border-radius: 12px;
+    max-width: 400px;
+    object-fit: cover;
+    max-height:400px;
+    flex:1;
 }
 
 .about-text {
@@ -294,7 +295,6 @@ h2 {
     max-width: 100%;
     max-height: 90vh;
     border-radius: 12px;
-    box-shadow: var(--shadow);
 }
 
 /* Projects Section */
@@ -324,7 +324,6 @@ h2 {
     max-width: 400px;
     height: auto;
     border-radius: 8px;
-    object-fit: cover;
 }
 
 .project-content {
